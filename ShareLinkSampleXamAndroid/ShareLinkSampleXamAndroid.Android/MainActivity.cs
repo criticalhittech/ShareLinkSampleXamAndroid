@@ -55,7 +55,9 @@ namespace ShareLinkSampleXamAndroid.Droid
                 .SetPositiveButton("Add", (dialog, whichButton) =>
                 {
                     var desc = description.Text;
+                    //Save off the url and description here
 
+                    //Remove dialog and navigate back to app or browser that shared the link
                     FinishAndRemoveTask();
                     FinishAffinity();
                 })
